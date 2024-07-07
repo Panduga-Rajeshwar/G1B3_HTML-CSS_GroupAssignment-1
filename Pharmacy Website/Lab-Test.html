@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="Lab-Test.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form class="lab-test-form">
+                <h2>1. Your Contact Details</h2>
+                <div class="form-group">
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                    <input type="text" id="patientid" name="patientid" placeholder="Patient Id if exists">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="contact" name="contact" placeholder="Contact Number" required>
+                    <input type="email" id="email" name="email" placeholder="Email Id" required>
+                </div>
+                <h2>2. Address</h2>
+                <div class="form-group">
+                    <input type="text" id="house-number" name="house-number" placeholder="House Number" required>
+                    <input type="text" id="street" name="street" placeholder="Street" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="area" name="area" placeholder="Area" required>
+                </div>
+                <label for="district"><b>District:</b></label>
+                <div class="form-group">
+                    <select id="district" name="district" required>
+                        <option value="">Choose</option>
+                        <option value="district1">District 1</option>
+                        <option value="district2">District 2</option>
+                    </select>
+                </div>
+                <br />
+                <fieldset>
+                    <legend>
+                        <h2>3. Choose the Test Type (Check at least one box without fail):</h2>
+                    </legend>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="cbc" name="testtype" value="cbc">
+                        <label for="cbc">CBC</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="urine" name="testtype" value="urine">
+                        <label for="urine">Complete Urine</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="lipid" name="testtype" value="lipid">
+                        <label for="lipid">Lipid Profile</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="tsh" name="testtype" value="tsh">
+                        <label for="tsh">Thyroid Stimulating Hormone (TSH)</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="glucose" name="testtype" value="glucose">
+                        <label for="glucose">Glucose Test</label>
+                    </div>
+                </fieldset>
+                <br />
+                <div class="form-group">
+                    <label><b>Do you want a hard copy of the report also ?</b></label>
+                    <div class="radio-group">
+                        <input type="radio" name="hardCopy" value="Yes" required>
+                        <label>Yes</label>
+                    </div>
+                    <div class="radio-group">
+                        <input type="radio" name="hardCopy" value="No" required>
+                        <label>No</label>
+                    </div>
+                </div>
+                <h2>4. Preferred Time Slot for Blood Sample Collection</h2>
+                <div class="form-group">
+                    <label for="preferred-date"><b>Preferred Date:</b></label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-time"><b>Preferred Time:</b></label>
+                    <input type="time" id="preferred-time" name="preferred-time" required>
+                </div>
+                <div class="form-buttons">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="form-image-container">
+            <div class="form-image">
+                <img src="Images/Lab-Test/lab-test.jpg" alt="Form Image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
